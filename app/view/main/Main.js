@@ -21,7 +21,7 @@
 
     defaults: {
         tab: {
-            iconAlign: 'top',
+            iconAlign: 'top'
         }
     },
 

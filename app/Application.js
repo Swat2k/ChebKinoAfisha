@@ -8,12 +8,9 @@ Ext.define('ChebAfisha.Application', {
     ],
     
     launch: function () {
-        var me = this;
-        
 
- 
 
-    },
+    }
 
 
 });

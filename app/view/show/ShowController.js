@@ -16,7 +16,7 @@ Ext.define('ChebAfisha.view.show.ShowController', {
             sorters: [{
                 property: 'time_seans',
                 direction: 'ASC'
-            }],
+            }]
         });
     },
 
