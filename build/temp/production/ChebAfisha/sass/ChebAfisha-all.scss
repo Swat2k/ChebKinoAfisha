@@ -1,10 +1,15 @@
 $app-name:  dynamic( 'ChebAfisha' );
-$image-search-path: '/mnt/Hive/Work/ExtJS/Kino/build/production/ChebAfisha/resources';
+$image-search-path: '/mnt/Hive/Work/ExtJS/Kino/cordova/www/resources';
 $theme-name:  dynamic( 'theme-triton' );
 $include-chebafisha-application: dynamic(true);;
+$include-chebafisha-cmp-header-header: dynamic(true);;
+$include-chebafisha-cmp-header-headercontroller: dynamic(true);;
 $include-chebafisha-model-seansmodel: dynamic(true);;
 $include-chebafisha-store-getallseansbydate: dynamic(true);;
 $include-chebafisha-store-theaterstore: dynamic(false);;
+$include-chebafisha-view-detail-detail: dynamic(true);;
+$include-chebafisha-view-detail-detailcontroller: dynamic(true);;
+$include-chebafisha-view-detail-detailviewmodel: dynamic(true);;
 $include-chebafisha-view-main-main: dynamic(true);;
 $include-chebafisha-view-main-maincontroller: dynamic(true);;
 $include-chebafisha-view-main-mainviewmodel: dynamic(true);;

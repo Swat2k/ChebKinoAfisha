@@ -3,7 +3,19 @@
      * The application's namespace.
      */
     "name": "ChebAfisha",
-    
+
+    "builds": {
+        "android": {
+            "packager": "cordova",
+            "cordova" : {
+                "config": {
+                    "platforms": "android",
+                    "id": "com.swat2k.ChebKinoAfisha"
+                }
+            }
+        }
+    },
+
     /**
      * The version of the application.
      */
