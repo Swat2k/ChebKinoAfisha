@@ -10,8 +10,8 @@ Ext.application({
 
     requires: [
         'ChebAfisha.model.SeansModel',
-        'ChebAfisha.view.main.Main'
-
+        'ChebAfisha.view.main.Main',
+        'ChebAfisha.cmp.header.Header'
     ],
 
     // The name of the initial view to create. With the classic toolkit this class

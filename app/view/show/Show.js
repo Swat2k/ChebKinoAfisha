@@ -16,7 +16,8 @@
     theater: null,
     requires: [
         'ChebAfisha.view.show.ShowController',
-        'ChebAfisha.view.show.ShowViewModel'
+        'ChebAfisha.view.show.ShowViewModel',
+        'ChebAfisha.view.detail.Detail'
     ],
     listeners: {
         initialize: 'onReady'
@@ -38,7 +39,10 @@
                 '     </tpl>',
                 '  </tpl>',
                 '</div>'
-            )
+            ),
+            listeners: {
+                itemtap : 'onItemTap'
+            }
         }
     ]
 

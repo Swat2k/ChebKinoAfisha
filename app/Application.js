@@ -6,7 +6,7 @@ Ext.define('ChebAfisha.Application', {
     stores: [
         'ChebAfisha.store.GetAllSeansByDate'
     ],
-    
+
     launch: function () {
 
 

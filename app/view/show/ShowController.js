@@ -6,6 +6,10 @@ Ext.define('ChebAfisha.view.show.ShowController', {
       return this.getView().down('#list');
     },
 
+    getMainView: function () {
+        return Ext.getCmp('main');
+    },
+
     createInternalStore: function (data) {
         var me = this,
              v = me.getView();
@@ -28,6 +32,12 @@ Ext.define('ChebAfisha.view.show.ShowController', {
 
         me.getList().setStore(v.store);
 
-     }
+    },
+
+    onItemTap: function (scope, index, target, record, e, eOpts) {
+        this.getMainView().setActiveItem({
+            xtype : 'app-detail'
+        });
+    }
 
 });

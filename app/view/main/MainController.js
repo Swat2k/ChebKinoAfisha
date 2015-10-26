@@ -2,10 +2,13 @@
     extend: 'Ext.app.ViewController',
     alias: 'controller.main',
 
+    getTabPanel: function () {
+        return this.getView().down('#tabpanel');
+    },
+
     onReady: function () {
         var me = this,
              v = me.getView(),
-			tb = v.getTabBar(),
             vm = v.getViewModel();
 
         Ext.Viewport.setMasked(true);
@@ -13,7 +16,7 @@
     },
 
     AddTabElemet: function(title, type, arr ) {
-        this.getView().add({
+        this.getTabPanel().add({
             title: title,
             iconCls: 'icon-' + type,
             items: [
