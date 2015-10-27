@@ -26,6 +26,7 @@
         {
             xtype: 'list',
             itemId: 'list',
+            emptyText:'Нет сеансов',
             flex: 1,
             itemTpl: new Ext.XTemplate(
                 '<div class = "seans">',
@@ -41,7 +42,8 @@
                 '</div>'
             ),
             listeners: {
-                itemtap : 'onItemTap'
+                itemtap : 'onItemTap',
+                taphold : 'onTapHold'
             }
         }
     ]

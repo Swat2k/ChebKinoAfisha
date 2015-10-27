@@ -2,10 +2,6 @@
     extend: 'Ext.app.ViewController',
     alias: 'controller.main',
 
-    getTabPanel: function () {
-        return this.getView().down('#tabpanel');
-    },
-
     onReady: function () {
         var me = this,
              v = me.getView(),
@@ -16,7 +12,7 @@
     },
 
     AddTabElemet: function(title, type, arr ) {
-        this.getTabPanel().add({
+        this.getView().add({
             title: title,
             iconCls: 'icon-' + type,
             items: [
@@ -40,7 +36,14 @@
 
 
         records.forEach(function (el) {
-            var data = el.getData();
+            var data = el.getData(),
+                current_datetime = new Date(),
+                seans_datetime = new Date(data.seans_date_time),
+                seans_datetime = new Date(Date.UTC(seans_datetime.getFullYear(), seans_datetime.getMonth(), seans_datetime.getDate(), seans_datetime.getHours(), seans_datetime.getMinutes() + seans_datetime.getTimezoneOffset()*2 , seans_datetime.getSeconds()));
+
+            if (current_datetime > seans_datetime) {
+                return false;
+            }
 
             if (data.theater_type == 'cinema4ya') {
                 cinema4ya_arr.push(data);

@@ -13,7 +13,7 @@ Ext.define('ChebAfisha.cmp.header.Header', {
         {
             xtype: 'button',
             width: 90,
-            text: 'back',
+            iconCls: 'fa fa-arrow-left',
             handler: 'onBack'
         }
     ]

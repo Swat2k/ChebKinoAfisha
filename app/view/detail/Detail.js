@@ -2,6 +2,7 @@ Ext.define('ChebAfisha.view.detail.Detail', {
     extend: 'Ext.Container',
     xtype: 'app-detail',
     controller: 'detail',
+    cls: 'detail',
     viewModel: 'detail',
     height: '100%',
     layout: {
@@ -22,10 +23,6 @@ Ext.define('ChebAfisha.view.detail.Detail', {
     items: [
         {
             xtype: 'header'
-        },
-        {
-            xtype: 'button',
-            text: 'test'
         }
     ]
 

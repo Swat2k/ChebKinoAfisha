@@ -17,10 +17,15 @@ Ext.define('ChebAfisha.view.show.ShowController', {
         v.store  = Ext.create('Ext.data.Store',{
             model : 'ChebAfisha.model.SeansModel',
             data: data,
-            sorters: [{
-                property: 'time_seans',
-                direction: 'ASC'
-            }]
+            sorters: [
+                {
+                    property: 'date_seans',
+                    direction: 'ASC'
+                }, {
+                    property: 'time_seans',
+                    direction: 'ASC'
+                }
+            ]
         });
     },
 
@@ -35,7 +40,7 @@ Ext.define('ChebAfisha.view.show.ShowController', {
     },
 
     onItemTap: function (scope, index, target, record, e, eOpts) {
-        this.getMainView().setActiveItem({
+        Ext.Viewport.setActiveItem({
             xtype : 'app-detail'
         });
     }

@@ -14,7 +14,7 @@ Ext.define('ChebAfisha.cmp.header.HeaderController', {
     },
 
     onBack: function () {
-        this.getMainView().getActiveItem().destroy();
+        Ext.Viewport.getActiveItem().destroy();
     }
 
 
