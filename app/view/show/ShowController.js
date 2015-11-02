@@ -41,7 +41,8 @@ Ext.define('ChebAfisha.view.show.ShowController', {
 
     onItemTap: function (scope, index, target, record, e, eOpts) {
         Ext.Viewport.setActiveItem({
-            xtype : 'app-detail'
+            xtype : 'app-detail',
+            rec: record
         });
     }
 

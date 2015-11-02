@@ -26,12 +26,11 @@
         {
             xtype: 'list',
             itemId: 'list',
-            emptyText:'Нет сеансов',
             flex: 1,
             itemTpl: new Ext.XTemplate(
                 '<div class = "seans">',
                 '  <div class = "title">{movietitle}</div>' ,
-                '  <div class = "datetime">Дата и время: {date_seans} {time_seans}</div>',
+                '  <div class = "datetime">Сеанс: {date_seans} {time_seans}</div>',
                 '  <tpl if="min_price != \'\'">',
                 '     <tpl if="min_price == max_price">',
                 '        <div class = "price">Цена: {max_price} руб.</div>',

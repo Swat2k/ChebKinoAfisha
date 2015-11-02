@@ -3,6 +3,7 @@ Ext.define('ChebAfisha.cmp.header.Header', {
     xtype: 'header',
     controller: 'header',
     height: 56,
+    cls: 'header',
     requires: [
         'ChebAfisha.cmp.header.HeaderController'
     ],
@@ -12,9 +13,13 @@ Ext.define('ChebAfisha.cmp.header.Header', {
     items: [
         {
             xtype: 'button',
-            width: 90,
-            iconCls: 'fa fa-arrow-left',
-            handler: 'onBack'
+            cls: 'back',
+            iconCls: 'fa fa-arrow-left left10',
+            handler: 'onBack',
+            text: 'Информация',
+            flex: 1,
+            width: '100%',
+            labelCls: 'back-button-label'
         }
     ]
 

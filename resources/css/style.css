@@ -5,3 +5,40 @@
     width: 50px !important;
     background-size: cover;
 }
+
+.header {
+    background-color: #5688E4;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.3);
+}
+
+.left10 {
+    left: 10px;
+    font-size: 2em !important;
+}
+
+.back-button-label {
+    text-align: left !important;
+    font-size: 26px;
+    padding-left: 20px;
+}
+
+.back {
+    width: 90px;
+    height: 100%;
+    border: none !important;
+    background: transparent !important;
+    color: white !important;
+}
+
+.movietitle {
+    font-size: 24pt;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-right: 20px;
+}
+
+.detail1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}

@@ -5,16 +5,29 @@ Ext.define('ChebAfisha.model.SeansModel', {
         { name: 'actors',           type: 'string' },
         { name: 'argument',         type: 'string' },
         { name: 'content_rating',   type: 'string' },
-        { name: 'date_released',    type: 'string' },
+        {
+            name: 'date_released', type: 'string', convert: function (value, record) {
+                return Ext.Date.format(new Date(value), 'd.n.Y');
+            }
+        },
         {
             name: 'date_seans', type: 'string', convert: function (value, record) {
-                return Ext.Date.format(new Date(value), 'd M Y');
+                return Ext.Date.format(new Date(value), 'd.n.Y');
             }
         },
         { name: 'description',      type: 'string' },
         { name: 'director_film',    type: 'string' },
         { name: 'duration',         type: 'string' },
-        { name: 'film_format',      type: 'string' },
+        { name: '',      type: 'string' },
+
+        {
+            name: 'film_format', type: 'string', convert: function (value, record) {
+                if (Ext.isEmpty(value))
+                    return "-"
+                else
+                    return value
+            }
+        },
         { name: 'genre',            type: 'string' },
         { name: 'kinopoisk_link',   type: 'string' },
         { name: 'kinopoisk_rating', type: 'string' },

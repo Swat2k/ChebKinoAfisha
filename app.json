@@ -4,18 +4,6 @@
      */
     "name": "ChebAfisha",
 
-    "builds": {
-        "android": {
-            "packager": "cordova",
-            "cordova" : {
-                "config": {
-                    "platforms": "android",
-                    "id": "com.swat2k.ChebKinoAfisha"
-                }
-            }
-        }
-    },
-
     /**
      * The version of the application.
      */
@@ -235,6 +223,9 @@
         {
             "path": "app.js",
             "bundle": true
+        }, {
+            "path": "ext-locale-ru.js",
+            "bundle": false
         }
     ],
 
