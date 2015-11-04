@@ -4,6 +4,19 @@
      */
     "name": "ChebAfisha",
 
+    "builds": {
+        "native": {
+            "packager": "phonegap",
+            "phonegap" : {
+                "config": {
+                    "platform": "android",
+                    "remote": true,
+                    "id": "com.swat2k.ChebAfisha"
+                }
+            }
+        }
+    },
+
     /**
      * The version of the application.
      */
